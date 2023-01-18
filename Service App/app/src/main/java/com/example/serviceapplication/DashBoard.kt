@@ -34,7 +34,7 @@ class DashBoard : AppCompatActivity() {
         img_btn_location = findViewById(R.id.img_btn_location)
         img_btn_profile = findViewById(R.id.img_btn_profile)
         img_btn_logout = findViewById(R.id.img_btn_logout)
-        txt_dashboard = findViewById(R.id.txt_dashboard)
+//        txt_dashboard = findViewById(R.id.txt_dashboard)
 //        txt_subheading = findViewById(R.id.txt_subheading)
         btn_services = findViewById(R.id.btn_services)
         btn_accessories = findViewById(R.id.btn_accessories)
