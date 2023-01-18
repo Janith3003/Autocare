@@ -9,28 +9,27 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/txt_dashboard"
-        android:layout_width="146dp"
-        android:layout_height="35dp"
-        android:textAlignment="center"
-        android:textColor="@color/darkblue"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="57dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/txt_dashboard"-->
+<!--        android:layout_width="146dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/darkblue"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textStyle="bold"-->
+<!--        tools:layout_editor_absoluteX="244dp"-->
+<!--        tools:layout_editor_absoluteY="57dp" />-->
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_dashboard"
-        app:layout_constraintVertical_bias="0.833">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
@@ -66,7 +65,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/btn_services"
                 tools:layout_editor_absoluteY="166dp" />
-
 
 
         </LinearLayout>
@@ -201,28 +199,15 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="183dp"
-        android:layout_height="33dp"
+        android:layout_width="201dp"
+        android:layout_height="60dp"
         android:layout_marginStart="114dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="114dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imgautocare" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="75dp"
-        android:layout_height="71dp"
-        android:layout_marginBottom="51dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/userimgnew" />
 
     <ImageButton
         android:id="@+id/img_btn_feedback"
@@ -236,6 +221,16 @@
         app:layout_constraintVertical_bias="0.009"
         android:backgroundTint="@color/white"
         app:srcCompat="@drawable/ic_baseline_feedback_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="75dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/userimgnew" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
